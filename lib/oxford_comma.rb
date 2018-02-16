@@ -9,6 +9,7 @@ def oxford_comma(array)
     position=1
     string1=""
     array.each {|name| (position < array.size) ? string1 << "#{array[position-1]}, " : string1 << " and #{array[position-1]}" ; position += 1}
+    return string1
   end
 
 end
